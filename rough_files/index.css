@@ -69,3 +69,24 @@ hr {
   border-top: 5px solid #573d3d;
   border-radius: 5px;
 }
+
+.author-box img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  /* float: left; */
+}
+
+.author-box span {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border: 1px solid #573d3d;
+  padding: 2px;
+  margin: 0 0 0 15px;
+  /* float: left; */
+}
+
+.blog-post img {
+  width: 250px;
+  height: 200px;
+}
