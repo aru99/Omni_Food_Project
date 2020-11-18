@@ -43,7 +43,7 @@ html {
   /* background-color: rgba(204, 202, 202, 0.39); */
 }
 .general_border {
-  border: 1px solid rgb(206, 26, 26);
+  /* border: 1px solid rgb(206, 26, 26); */
 }
 .box {
   padding: 1%;
@@ -397,4 +397,61 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/* ---------------------------------- */
+/*  PRICE PLANS */
+/* --------------------------------- */
+
+.section-plans {
+  background-color: #f4f4f4;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  -webkit-box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.58);
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.58);
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid rgba(248, 196, 172, 0.836);
+}
+
+.plan-box div:first-child {
+  background-color: #fcfcfc;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+
+.plan-price {
+  font-size: 300%;
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
 }
