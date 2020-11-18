@@ -10,7 +10,7 @@
   font-family: "Lato", sans-serif;
 }
 
-/* class for testing the design flow during development, comment out when deploying, use when testing */
+/* class for testing the design flow during development, comment out when deploying, use when testing. ALSO COMMENT OUT THE BACKGROUND COLOR PROPERTY FROM ROW !!!! */
 .general_border {
   border: 1px solid #fff;
 }
@@ -32,7 +32,7 @@ html {
   width: 1140px;
   /* top and bottom 0, left and right auto */
   margin: 0 auto;
-  background-color: rgba(204, 202, 202, 0.356);
+  background-color: rgba(204, 202, 202, 0.39);
 }
 
 /* ---------- headings ------------- */
@@ -106,4 +106,42 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin: 55px 0 0 0;
+}
+
+.main-nav li {
+  display: inline-block;
+
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 5px 0;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  /* font size relavtive to 20px */
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  border-radius: 2px;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-radius: 2px;
+  border-bottom: 2px solid #e67e22;
 }
