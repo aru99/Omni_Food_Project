@@ -1,3 +1,7 @@
+/* ---------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------- */
+
 /* Global style rules */
 * {
   margin: 0;
@@ -20,6 +24,9 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/* ---------------------------------- */
+/* REUSABLE COMPONENTS */
+/* --------------------------------- */
 /* Row is the parent style for every relative width style */
 .row {
   width: 1140px;
@@ -28,14 +35,7 @@ html {
   background-color: rgba(204, 202, 202, 0.356);
 }
 
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.712)),
-    url(img/hero.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
+/* ---------- headings ------------- */
 h1 {
   margin-top: 0;
   margin-bottom: 20px;
@@ -48,29 +48,62 @@ h1 {
   word-spacing: 4px;
 }
 
+/* ------- buttons ------------- */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
+}
+
+/* ---------------------------------- */
+/* header */
+/* --------------------------------- */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.712)),
+    url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
 .hero-text-box {
   position: absolute;
   width: 1140px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 30px;
-  font-weight: 300;
-  text-decoration: none;
-  border-radius: 20px;
-}
-
-.btn-full {
-  background-color: #e67e22;
-  border: 1px solid #e67e22;
-  color: #fff;
-}
-
-.btn-ghost {
-  border: 1px solid #e67e22;
-  color: #e67e22;
 }
