@@ -1,13 +1,17 @@
-/*  */
+/* Global style rules */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+
+/* class for testing the design flow during development, comment out when deploying, use when testing */
 .general_border {
-  border: 1px solid rgb(31, 22, 22);
+  border: 1px solid #fff;
 }
+
+/* global styles */
 html {
   background-color: #fff;
   color: #555;
@@ -16,9 +20,57 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/* Row is the parent style for every relative width style */
 .row {
   width: 1140px;
   /* top and bottom 0, left and right auto */
   margin: 0 auto;
   background-color: rgba(204, 202, 202, 0.356);
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.712)),
+    url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  /* font size relative to the global font size */
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.btn-full {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+}
+
+.btn-ghost {
+  border: 1px solid #e67e22;
+  color: #e67e22;
 }
