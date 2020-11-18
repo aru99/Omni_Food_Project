@@ -205,8 +205,18 @@ header {
 }
 
 /* ---------------------------------- */
+/* Feature*/
+/* --------------------------------- */
+.section-features .long-copy {
+  margin-bottom: 20px;
+}
+
+/* ---------------------------------- */
 /* meals */
 /* --------------------------------- */
+.section-meals {
+  padding: 0%;
+}
 .meals-showcase {
   list-style: none;
   width: 100%;
@@ -221,9 +231,20 @@ header {
 .meal-photo {
   width: 100%;
   margin: 0;
+  /* to stop the overflow of the scled images from the parent element */
+  overflow: hidden;
+  background-color: #000;
 }
 
 .meal-photo img {
+  opacity: 0.6;
   width: 100%;
   height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }
