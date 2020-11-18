@@ -11,9 +11,6 @@
 }
 
 /* class for testing the design flow during development, comment out when deploying, use when testing. ALSO COMMENT OUT THE BACKGROUND COLOR PROPERTY FROM ROW !!!! */
-.general_border {
-  border: 1px solid rgb(206, 26, 26);
-}
 
 /* global styles */
 html {
@@ -24,6 +21,17 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/* fixing the floats */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
 /* ---------------------------------- */
 /* REUSABLE COMPONENTS */
 /* --------------------------------- */
@@ -34,7 +42,9 @@ html {
   margin: 0 auto;
   background-color: rgba(204, 202, 202, 0.39);
 }
-
+.general_border {
+  border: 1px solid rgb(206, 26, 26);
+}
 .box {
   padding: 1%;
 }
@@ -247,4 +257,54 @@ header {
 .meal-photo img:hover {
   transform: scale(1.05);
   opacity: 1;
+}
+
+/* ---------------------------------- */
+/* HOW IT WORKS */
+/* --------------------------------- */
+.section-steps {
+  background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-step div {
+  color: #e67e22;
+  display: inline-block;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 130%;
+  margin-right: 15px;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin: 0 10px 0 0;
 }
